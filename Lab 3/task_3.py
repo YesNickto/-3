@@ -12,6 +12,7 @@ def calculate_frequency(letter_counts):
         frequencies[letter] = count / total_letters
     return frequencies
 
+
 main_str = """
 У лукоморья дуб зелёный;
 Златая цепь на дубе том:
@@ -51,5 +52,4 @@ main_str = """
 letter_counts = count_letters(main_str)
 frequencies = calculate_frequency(letter_counts)
 
-for letter, frequency in frequencies.items():
-    print(f"{letter}: {frequency:.2f}")
+for letter, frequency in frequencies.items(): print(f"{letter}: {frequency:.2f}")
